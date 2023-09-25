@@ -94,7 +94,7 @@ const technologiesTravelli = [
 export default function Main() {
   return (
     <div className="flex justify-center flex-1">
-      <div className="flex flex-row max-w-6xl">
+      <div className="flex flex-wrap flex-row max-w-6xl">
         <div className="">
           <CardProfile
             name="Jose Carrizales"
@@ -106,8 +106,8 @@ export default function Main() {
           />
           <ExperiencesCard title="Experiences" experiences={experiences} />
         </div>
-        <div className="flex flex-col justify-start w-full">
-          <div className="flex flex-row gap-4 mt-5">
+        <div className="flex flex-col justify-start w-[700px]">
+          <div className="flex flex-row gap-4 mt-5 ml-5">
             <Experiences
               technologiesProps={technology}
               developmentArea="Front End"
@@ -117,9 +117,9 @@ export default function Main() {
               developmentArea="Desing"
             />
           </div>
-          <div className="flex flex-col gap-2 mt-2 justify-center w-full">
+          <div className="flex flex-col gap-2 mt-2 ml-5 justify-center w-[700px]">
             <Bar description="Projects" cant={3} />
-            <div className="flex flex-col gap-6">
+            <div className="flex flex-wrap flex-col gap-6">
               <CardProject
                 title="Travelli"
                 description="Travelli es una innovadora plataforma digital diseñada para revolucionar la forma en que las agencias de viaje y los viajeros interactúan en el mercado de viajes y excursiones en Venezuela. "
