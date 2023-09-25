@@ -96,8 +96,8 @@ const technologiesTravelli = [
 export default function Main() {
   return (
     <div className="flex justify-center flex-1">
-      <div className="flex flex-wrap flex-row max-w-6xl">
-        <div className="flex flex-col tablet:flex-row tablet:justify-center tablet:w-full">
+      <div className="flex flex-wrap flex-row max-w-7xl">
+        <div className="flex flex-col tablet:flex-row tablet:justify-center tablet:w-full phone:flex-wrap">
           <CardProfile
             name="Jose Carrizales"
             email="carrizalesj5@gmail.com"
