@@ -1,7 +1,4 @@
 import "@fontsource-variable/montserrat";
-import { IoMdMail } from "react-icons/io";
-import { FaPhoneAlt } from "react-icons/fa";
-import { IconContext } from "react-icons";
 
 interface Experience {
     date: string;
