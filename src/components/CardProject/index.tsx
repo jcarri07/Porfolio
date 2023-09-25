@@ -12,7 +12,7 @@ interface technologie {
     name: string;
 }
 
-export default function CardProject({title, description, image, technologies}: projectsProps) {
+export default function CardProject({link, title, description, image, technologies}: projectsProps) {
   return (
     <div className="flex flex-col justify-center items-center bg-white shadow-lg rounded-lg w-[100%] h-[320px]">
       <div className="flex justify-center items-center h-[90%] w-[95%]">
@@ -46,7 +46,7 @@ export default function CardProject({title, description, image, technologies}: p
               </p>
             </div>
             <div className="flex w-full gap-2 mt-4">
-              <a href="https://www.travellli.com/">
+              <a href={link}>
                 <button
                   className="mr-4 px-10 py-2 rounded-lg bg-[#2F80ED] text-white"
                   onClick={() => console.log("demo")}

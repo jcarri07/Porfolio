@@ -9,6 +9,8 @@ import ExperiencesCard from '../ExperiencesCard';
 import image from '../../assets/images/ABAE.webp'
 import image2 from '../../assets/images/ico_travelli.webp'
 import image3 from '../../assets/images/Portada_Travelli.png'
+import image4 from '../../assets/images/myApp.png'
+import image5 from '../../assets/images/responsive-desing.png'
 
 
 
@@ -93,9 +95,38 @@ const technologiesTravelli = [
   }
 ];
 
+const technologiesMyApp = [
+  {
+    id: 1,
+    name: "ReactNative",
+  },
+  {
+    id: 2,
+    name: "NativeBase"
+  },
+  {
+    id: 3,
+    name: "UI/UX"
+  }
+];
+
+const technologiesResponsive = [
+  {
+    id: 1,
+    name: "HTML",
+  },
+  {
+    id: 2,
+    name: "CSS"
+  },
+  {
+    id: 3,
+    name: "UI/UX"
+  }
+];
 export default function Main() {
   return (
-    <div className="flex justify-center flex-1">
+    <div className="flex justify-center flex-1 pb-20">
       <div className="flex flex-wrap flex-row max-w-7xl">
         <div className="flex flex-col tablet:flex-row tablet:justify-center tablet:w-full phone:flex-wrap">
           <CardProfile
@@ -128,6 +159,22 @@ export default function Main() {
                 image={image3}
                 technologies={technologiesTravelli}
                 link={""}
+              />
+
+              <CardProject
+                title="My App React Native"
+                description="Aplicacion construida con React Native Para fines Demostrativos"
+                image={image4}
+                technologies={technologiesMyApp}
+                link={"#"}
+              />
+
+              <CardProject
+                title='Responsive Desing App'
+                description='Applicacion Diseñada con HTML y CSS de manera responsive'
+                technologies={technologiesResponsive}
+                image={image5}
+                link="https://dcrd-3.vercel.app/"
               />
             </div>
             <Bar description="Blogs" cant={1} />
