@@ -14,9 +14,9 @@ interface technologie {
 
 export default function CardProject({title, description, image, technologies}: projectsProps) {
   return (
-    <div className="flex flex-col justify-center items-center bg-white shadow-lg rounded-lg w-[700px] h-[320px]">
+    <div className="flex flex-col justify-center items-center bg-white shadow-lg rounded-lg w-[100%] h-[320px]">
       <div className="flex justify-center items-center h-[90%] w-[95%]">
-        <div className="flex justify-center items-center w-[35%] h-[80%] rounded-lg border-gray-200 border-2">
+        <div className="flex justify-center items-center w-[50%] h-[80%] rounded-lg border-gray-200 border-2">
           <img
             className="w-full h-[80%]"
             src={image}

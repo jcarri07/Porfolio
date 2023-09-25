@@ -1,14 +1,16 @@
 import CardProfile from '../CardProfile';
-import miImagen from '../../assets/images/img_profile.jpg';
+import miImagen from '../../assets/images/img_profile.webp';
 import Experiences from '../Experiences';
 import DesingExperiences from '../DesingExperience';
 import CardProject from '../CardProject';
 import Bar from '../Bar';
 import ExperiencesCard from '../ExperiencesCard';
 
-import image from '../../assets/images/ABAE.png'
-import image2 from '../../assets/images/ico_travelli.png'
+import image from '../../assets/images/ABAE.webp'
+import image2 from '../../assets/images/ico_travelli.webp'
 import image3 from '../../assets/images/Portada_Travelli.png'
+
+
 
 
 const technology = [
@@ -95,7 +97,7 @@ export default function Main() {
   return (
     <div className="flex justify-center flex-1">
       <div className="flex flex-wrap flex-row max-w-6xl">
-        <div className="">
+        <div className="flex flex-col tablet:flex-row tablet:justify-center tablet:w-full">
           <CardProfile
             name="Jose Carrizales"
             email="carrizalesj5@gmail.com"
@@ -106,8 +108,8 @@ export default function Main() {
           />
           <ExperiencesCard title="Experiences" experiences={experiences} />
         </div>
-        <div className="flex flex-col justify-start w-[700px]">
-          <div className="flex flex-row gap-4 mt-5 ml-5">
+        <div className="flex flex-col justify-start w-[60%] min-w-[600px] tablet:w-[80%] tablet:ml-[10%]">
+          <div className="flex flex-row gap-4 mt-5">
             <Experiences
               technologiesProps={technology}
               developmentArea="Front End"
@@ -117,7 +119,7 @@ export default function Main() {
               developmentArea="Desing"
             />
           </div>
-          <div className="flex flex-col gap-2 mt-2 ml-5 justify-center w-[700px]">
+          <div className="flex flex-col gap-2 mt-2 justify-center w-[100%]">
             <Bar description="Projects" cant={3} />
             <div className="flex flex-wrap flex-col gap-6">
               <CardProject
