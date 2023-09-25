@@ -168,7 +168,7 @@ export default function Main() {
                 description="Travelli es una innovadora plataforma digital diseñada para revolucionar la forma en que las agencias de viaje y los viajeros interactúan en el mercado de viajes y excursiones en Venezuela. "
                 image={image3}
                 technologies={technologiesTravelli}
-                link={"travelli.com"}
+                link={"https://www.travellli.com/"}
               />
 
               <CardProject
