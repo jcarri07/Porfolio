@@ -11,6 +11,7 @@ import image2 from '../../assets/images/ico_travelli.webp'
 import image3 from '../../assets/images/Portada_Travelli.png'
 import image4 from '../../assets/images/myApp.png'
 import image5 from '../../assets/images/responsive-desing.png'
+import image6 from '../../assets/images/ReactPorfolio.png'
 
 
 
@@ -19,19 +20,13 @@ const technology = [
   {
     id: 1,
     name: 'React',
-    level: '70%'
+    level: '60%'
   },
 
   {
     id: 2,
     name: 'React Native',
-    level: '70%'
-  },
-
-  {
-    id: 3,
-    name: 'Node Js',
-    level: '90%'
+    level: '60%'
   },
 
   {
@@ -124,11 +119,26 @@ const technologiesResponsive = [
     name: "UI/UX"
   }
 ];
+
+const technologiesPorfolio = [
+  {
+    id: 1,
+    name: "ReactJs",
+  },
+  {
+    id: 2,
+    name: "TailwindCSS"
+  },
+  {
+    id: 3,
+    name: "UI/UX"
+  }
+];
 export default function Main() {
   return (
     <div className="flex justify-center flex-1 pb-20">
       <div className="flex flex-wrap flex-row max-w-7xl">
-        <div className="flex flex-col tablet:flex-row tablet:justify-center tablet:w-full phone:flex-wrap">
+        <div className="flex flex-col tablet:flex-row tablet:justify-center tablet:w-full">
           <CardProfile
             name="Jose Carrizales"
             email="carrizalesj5@gmail.com"
@@ -158,7 +168,7 @@ export default function Main() {
                 description="Travelli es una innovadora plataforma digital diseñada para revolucionar la forma en que las agencias de viaje y los viajeros interactúan en el mercado de viajes y excursiones en Venezuela. "
                 image={image3}
                 technologies={technologiesTravelli}
-                link={""}
+                link={"travelli.com"}
               />
 
               <CardProject
@@ -175,6 +185,13 @@ export default function Main() {
                 technologies={technologiesResponsive}
                 image={image5}
                 link="https://dcrd-3.vercel.app/"
+              />
+              <CardProject
+                title='Portafolio React'
+                description='Portafolio contruido con React & Tailwind'
+                technologies={technologiesPorfolio}
+                image={image6}
+                link="https://vercel.com/jcarri07/jcdeveloper"
               />
             </div>
             <Bar description="Blogs" cant={1} />
